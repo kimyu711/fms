@@ -1,0 +1,40 @@
+{
+    "name": "xpressengine-plugin/fms",
+    "description": "This Package is Xpressengine Plugin - Fms plugin.",
+    "keywords": [
+        "xpressengine",
+        "plugin"
+    ],
+    "license": "LGPL-2.1",
+    "version": "1.0.0",
+    "type": "xpressengine-plugin",
+    "support": {
+        "email": "input@your.email"
+    },
+    "authors": [
+        {
+            "name": "input your name",
+            "email": "input@your.email",
+            "homepage": "http://input.your.site",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "xpressengine": {
+            "title": "Fms plugin",
+            "component": {
+                "theme/fms@fmsmain": {
+                    "name": "FmsMain theme",
+                    "description": "The theme supported by Fms plugin.",
+                    "class": "XpressenginePlugin\\XePlugin\\Fms\\Themes\\FmsMain\\FmsMainTheme"
+                }
+            }
+        }
+    },
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "XpressenginePlugin\\XePlugin\\Fms\\": "src/"
+        }
+    }
+}
